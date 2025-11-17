@@ -1,0 +1,144 @@
+%-------------------------
+% Rover Resume - Base Template
+% Link: https://github.com/subidit/rover-resume
+%------------------------
+
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+% Page + typography
+\usepackage[a4paper, margin=0.4in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Headings
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+% Consistent vertical spacing around headings (no manual \vspace in body)
+\titlespacing{\section}{0pt}{1.0\baselineskip}{0.25\baselineskip}
+\titlespacing{\subsection}{0pt}{0.35\baselineskip}{0.15\baselineskip}
+\titlespacing{\subsubsection}{0pt}{0.15\baselineskip}{0.10\baselineskip}
+
+% Lists
+\usepackage{enumitem}
+% Global defaults for compact, consistent lists
+\setlist[itemize]{leftmargin=*, labelsep=0.5em, topsep=0.25\baselineskip, itemsep=0.12\baselineskip, parsep=0pt}
+\setlist[description]{style=unboxed, leftmargin=0pt, labelsep=0.5em, topsep=0.25\baselineskip, itemsep=0.12\baselineskip}
+% Ultra-compact variant you can invoke per list: \begin{tightitemize} ...
+\newlist{tightitemize}{itemize}{1}
+\setlist[tightitemize,1]{
+  leftmargin=2.5em,
+  labelsep=0.4em,
+  topsep=0.15\baselineskip,
+  itemsep=0.08\baselineskip,
+  parsep=0pt,
+  label=\textbullet
+}
+
+\usepackage{tabularx}
+
+\setcounter{secnumdepth}{0} % remove section numbering
+
+
+\begin{document}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  % Left column (name + contact)
+  \begin{minipage}[t]{\linewidth}
+    {\Huge\bfseries Charlotte Model}\\[1pt]
+    \mbox{cmodel@me.com {\small\textperiodcentered} +41 79 864 26 44}
+  \end{minipage}
+  &
+  % Right column (GitHub + languages)
+  \begin{minipage}[t]{0.5\linewidth}\raggedleft
+    {github.com/cmodel1}\\[1pt]
+    Python, TypeScript, Java, C\#
+  \end{minipage}
+\end{tabularx}
+
+%=================%
+\section{Education}
+%=================%
+\subsection{MSc in Computer Science \hfill 09/2025 -- exp. 09/2027}
+\subsubsection{University of Zurich \hfill Zurich, Switzerland}
+\begin{tightitemize}
+  \item Current GPA: 5.5/6.0
+  \item Coursework: Machine Learning \& Data Science Foundations, Software Testing
+\end{tightitemize}
+\subsection{BSc in Computer Science \hfill 09/2021 -- 10/2025}
+\subsubsection{University of Zurich \hfill Zurich, Switzerland}
+\begin{tightitemize}
+  \item GPA: 5.3/6.0
+  \item Coursework: Software Engineering, Algorithms \& Data Structures, High Performance Computing
+\end{tightitemize}
+\subsection{International Baccalaureate Bilingual Diploma  \hfill 08/2014 -- 06/2018}
+\subsubsection{Zurich International School \hfill Adliswil, Switzerland}
+\begin{tightitemize}
+	\item IB overall grade: 38/42, GPA: 3.87/4.0, 4x Honor Roll recipient, Principal's Award Recipient
+	\item Coursework: IB HL Maths, IB HL Physics, IB HL English Literature
+\end{tightitemize}
+
+%=================%
+\section{Professional Experience}
+%=================%
+\subsection{Full-Stack Intern in Digital Projects \& Data Solutions Team \hfill 06 -- 09/2024}
+\subsubsection{ZFV-Unternehmungen (Swiss catering \& hospitality group) \hfill Zurich, Switzerland}
+\begin{tightitemize}
+	\item Developed an MS SQL Server interface to streamline data handling for non-technical users.
+\end{tightitemize}
+
+\subsection{Working Student at in-house startup ``Znachtmacherei"  \hfill 10/2022 -- 12/2023}
+\subsubsection{ZFV-Unternehmungen (Swiss catering \& hospitality group)\hfill Zurich, Switzerland}
+\begin{tightitemize}
+	\item Applied lean startup methods in a 3-person team to launch and develop a meal service for families in Zurich.
+\end{tightitemize}
+
+%===========================%
+\section{Leadership \& Activities}
+%===========================%
+\subsection{Snowboard Instructor \hfill 12/2019 -- 04/2022}
+\subsubsection{Swiss Ski and Snow Sports School Davos \hfill Davos, Switzerland}
+\begin{tightitemize}
+  \item 75+ hours of teaching kids and adults over three winter seasons, developing adaptive communication skills.
+\end{tightitemize}
+
+%=================%
+\section{Programming Projects}
+%=================%
+\subsection{Automatic Identification of Romansh Idioms $|$ {\normalfont\textit{Bachelor Thesis}} \hfill 03 -- 09/2025}
+\begin{tightitemize}
+  \item Developed a Romansh idiom identification system achieving 98\% macro F1 for future NLP integration. 
+  \item To be submitted to the 2026 Swiss Text Analytics Conference.
+\end{tightitemize}
+\subsection{adviseyou Company Website $|$ {\normalfont\textit{\mbox{www.adviseyou.ch}}} \hfill 01 -- 02/2025}
+\begin{tightitemize}
+  \item Built and maintain a multilingual, responsive website, enhancing adviseyou's online visibility.
+\end{tightitemize}
+\subsection{Survive the Night $|$ {\normalfont\textit{\mbox{github.com/orgs/sopra-fs-24-group-42}}} \hfill 02 -- 05/2024}
+\begin{tightitemize}
+  \item Built a real-time multiplayer \textit{Werewolf} game in an agile 4-person team, to apply SCRUM and Git workflows.
+\end{tightitemize}
+
+
+%===========================%
+\section{Skills}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Languages] English (fluent), German (fluent), French (fluent)
+	\item[Programming Languages] Python, TypeScript, SQL, Bash, C, C\#, Java
+	\item[Frameworks] React, Next.js, .NET, Spring Boot, Django
+	\item[Tools] Git, Figma, Vercel, Google Cloud Platform, Docker, LaTeX
+\end{description}
+
+%===========================%
+\section{Further Interests}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Skateboarding] Active member of Lettyrämp Verein, Zurich (community-run DIY skatepark)
+	\item[English Literature] With a penchant for fiction; currently reading Jon Krakauer's \textit{Into Thin Air}
+\end{description}
+
+\end{document}
